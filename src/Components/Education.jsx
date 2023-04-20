@@ -10,38 +10,38 @@ import React from "react";
  * freely use on your site.
  */
 
-import image from "../images/education.svg";
-const imageAltText = "table with pens and pencils";
+import image from "../images/bachelors.svg";
+const imageAltText = "graduation cap and degree";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
-const description =
-  "I'm a Data Science student studying at Thomas More University. I enjoy transforming and analyzing data in creative ways.";
+const description = "Don't let what you cannot do interfere with what you can do.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-const skillsList = [
-  "MICROSOFT CERTIFIED",
-  "Azure Fundamentals",
-  "Azure Data Fundamentals",
-  "Azure AI Fundamentals",
-  "GOOGLE CERTIFIED",
-  "Advanced Google Analytics",
-  "CISCO CERTIFIED NETWORK ASSOCIATE",
-  "Routing and Switching (CCNA R&S) ",
-  "Security (CCNA Security)",
-  "OTHERS",
-  "AOE General Data Protection Regulation (GDPR) Certification",
+/*random 4 education cell grid*/
+const educationList = [
+  {
+    title: "Thomas More University",
+    description: "Bachelor of Science in Data Science",
+    date: "2021 - 2024",
+    image: "../images/TM.svg",
+  },
+  {
+    title: "University Of Buea",
+    description: "Bachelor of Science Geology & Petroleum Engineering",
+    date: "2010 - 2014",
+    image: "../images/UBueaLogo.svg",
+  },
 ];
+
 /**
  * Use this to give a quotes, or a detail about your education.
  */
-const detailOrQuote = "Data is a precious thing and will last longer than the systems themselves.";
+const detailOrQuote =
+  "Data is the new oil, Analytics is the new refinery, & Intelligence is the gasoline which drives growth.";
 
-const Education = () => {
+/* display education list */
+const EducationList = () => {
   return (
     <section className="light" id="education">
       <img className="background" src={image} alt={imageAltText} />
@@ -52,9 +52,10 @@ const Education = () => {
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          borderRadius: "1rem",
         }}
       >
-        <h2>My Certifications</h2>
+        <h2>My Education</h2>
         <p className="large">{description}</p>
         <hr />
         <ul
@@ -63,22 +64,22 @@ const Education = () => {
             columns: 2,
             fontSize: "1.25rem",
             margin: "2rem 3rem",
-            gap: "3rem",
+            gap: "1rem",
           }}
         >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+          {educationList.map((education) => (
+            <li key={education.title}>
+              <h3>{education.title}</h3>
+              <p>{education.description}</p>
+              <p>{education.date}</p>
+            </li>
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>
-          <i>
-            <b>{detailOrQuote}</b>
-          </i>
-        </p>
+        <p style={{ padding: "1rem 3rem 0" }}><b>{detailOrQuote}</b></p>
       </div>
     </section>
   );
 };
 
-export default Education;
+export default EducationList;
