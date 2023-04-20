@@ -2,7 +2,7 @@
  * Header component
  *
  * Top navigation bar for your site. Set to remain visible as the
- * user scrolls so that they can constantly reach any part of your page.
+ * user scrolls so that they can constantly reach any part of your pages.
  */
 import React from "react";
 

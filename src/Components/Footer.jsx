@@ -5,7 +5,7 @@
  * Contact information is passed in from the App component that
  * renders the Footer.
  *
- * If a social value has an empty string it will not be displayed.
+ * If a social value has an empty string it will not be displayed..
  */
 import React from "react";
 import PropTypes from "prop-types";
@@ -134,7 +134,6 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
-
 };
 
 export default Footer;

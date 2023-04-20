@@ -27,7 +27,7 @@ const imageAltText = "desktop with books and laptop";
  * Project list
  *
  * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
+ * links section. Below is a sample, update to reflect links you'd like to highlights.
  */
 const projectList = [
   {
@@ -64,7 +64,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slide" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slide",
+            }}
             alt={imageAltText}
           />
         </div>

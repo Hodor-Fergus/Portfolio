@@ -14,7 +14,7 @@ import image from "../images/education.svg";
 const imageAltText = "table with pens and pencils";
 
 /**
- * Sort description that expands on your title on the Home component.
+ * Sort descriptions that expands on your title on the Home component.
  */
 const description =
   "I'm a Data Science student studying at Thomas More University. I enjoy transforming and analyzing data in creative ways.";
