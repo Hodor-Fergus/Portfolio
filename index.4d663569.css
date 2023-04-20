@@ -7,6 +7,10 @@ html, body {
   font-family: Montserrat, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 div#main {
   flex-direction: column;
   display: flex;
@@ -116,6 +120,34 @@ a:hover {
 img.socialIcon {
   width: 30px;
   height: 30px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.arrow-svg {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
