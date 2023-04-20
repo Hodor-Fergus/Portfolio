@@ -38,7 +38,7 @@ const educationList = [
  * Use this to give a quotes, or a detail about your education.
  */
 const detailOrQuote =
-  "Data is the new oil, Analytics is the new refinery, & Intelligence is the gasoline which drives growth.";
+  "Data is the new oil, Analytics is the new refinery & Intelligence is the gasoline which drives growth.";
 
 /* display education list */
 const EducationList = () => {
@@ -76,7 +76,9 @@ const EducationList = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}><b>{detailOrQuote}</b></p>
+        <p style={{ padding: "1rem 3rem 0" }}>
+          <b>{detailOrQuote}</b>
+        </p>
       </div>
     </section>
   );
